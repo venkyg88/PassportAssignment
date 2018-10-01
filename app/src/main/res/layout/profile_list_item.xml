@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+
+    <ImageView
+        android:id="@+id/listImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds ="true"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/listImageView"
+        android:text="@string/text_view_name"
+        android:paddingLeft="@dimen/text_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewName"
+        android:layout_toRightOf="@+id/listImageView"
+        android:text="@string/text_view_age_number"
+        android:paddingLeft="@dimen/text_margin"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/listImageView"
+        android:background="@color/gray"
+        android:elevation="4dp"/>
+
+</RelativeLayout>
